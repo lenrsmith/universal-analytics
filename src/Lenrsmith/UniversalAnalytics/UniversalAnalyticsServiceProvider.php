@@ -19,7 +19,7 @@ class UniversalAnalyticsServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		$this->package('tag-planet/universal-analytics');
+		$this->package('lenrsmith/universal-analytics');
 	}
 
 	/**
