@@ -1,6 +1,6 @@
 {
-    "name": "tag-planet/universal-analytics",
-    "description": "Provides an easy way to include Universal Analytics code with your Laravel 4 application",
+    "name": "lenrsmith/universal-analytics",
+    "description": "Provides an easy way to include Universal Analytics code with your Laravel 5 application",
     "tags": ["universal-analytics", "analytics", "laravel"],
     "license": "MIT",
     "authors": [
@@ -11,19 +11,19 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/TagPlanet/universal-analytics/issues",
-        "source": "https://github.com/TagPlanet/universal-analytics/tree/master"
+        "issues": "https://github.com/lenrsmith/universal-analytics/issues",
+        "source": "https://github.com/lenrsmith/universal-analytics/tree/master"
     },
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.*"
+        "illuminate/support": "5.*"
     },
     "require-dev": {
         "mockery/mockery": "0.7.2"
     },
     "autoload": {
         "psr-0": {
-            "TagPlanet\\UniversalAnalytics": "src/"
+            "lenrsmith\\UniversalAnalytics": "src/"
         }
     },
     "minimum-stability": "dev"
