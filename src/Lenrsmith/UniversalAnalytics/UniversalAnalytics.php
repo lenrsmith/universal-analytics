@@ -1,4 +1,4 @@
-<?php namespace TagPlanet\UniversalAnalytics;
+<?php namespace Lenrsmith\UniversalAnalytics;
 
 use Illuminate\View\Environment;
 use Illuminate\Config\Repository;
@@ -96,7 +96,7 @@ class UniversalAnalytics
     /**
      * Find a single tracker instance
      * 
-     * @return TagPlanet\UniversalAnalytics\UniversalAnalyticsInstance
+     * @return Lenrsmith\UniversalAnalytics\UniversalAnalyticsInstance
      */
     public function get($name)
     {
@@ -125,7 +125,7 @@ class UniversalAnalytics
     /**
      * Create a new tracker instance, or update an existing a new config
      * 
-     * @return TagPlanet\UniversalAnalytics\UniversalAnalyticsInstance
+     * @return Lenrsmith\UniversalAnalytics\UniversalAnalyticsInstance
      */
     protected function create($account, $config = array())
     {

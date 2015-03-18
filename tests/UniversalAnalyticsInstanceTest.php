@@ -1,6 +1,6 @@
 <?php
 
-use TagPlanet\UniversalAnalytics\UniversalAnalyticsInstance;
+use Lenrsmith\UniversalAnalytics\UniversalAnalyticsInstance;
 use Mockery as m;
 
 class UniversalAnalyticsInstanceTest extends PHPUnit_Framework_TestCase {

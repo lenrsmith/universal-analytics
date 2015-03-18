@@ -1,6 +1,6 @@
 <?php
 
-use TagPlanet\UniversalAnalytics\UniversalAnalytics;
+use Lenrsmith\UniversalAnalytics\UniversalAnalytics;
 use Mockery as m;
 
 class UniversalAnalyticsTest extends PHPUnit_Framework_TestCase {
@@ -8,7 +8,7 @@ class UniversalAnalyticsTest extends PHPUnit_Framework_TestCase {
     /**
      * UA instance
      *
-     * @var TagPlanet/UniversalAnalytics/UniversalAnalytics
+     * @var Lenrsmith/UniversalAnalytics/UniversalAnalytics
      */
     protected $universalAnalytics;
     
@@ -30,7 +30,7 @@ class UniversalAnalyticsTest extends PHPUnit_Framework_TestCase {
     {
         // Check for instance creation
         $instance = $this->universalAnalytics->ga('create', 'UA-123456-1');
-        $this->assertInstanceOf('TagPlanet\UniversalAnalytics\UniversalAnalyticsInstance', $instance);
+        $this->assertInstanceOf('Lenrsmith\UniversalAnalytics\UniversalAnalyticsInstance', $instance);
         
         // Since this isn't a create call, we shouldn't get anything
         $return = $this->universalAnalytics->ga('send', 'pageview');
@@ -51,7 +51,7 @@ class UniversalAnalyticsTest extends PHPUnit_Framework_TestCase {
         
         // Grab it & test it
         $instance = $this->universalAnalytics->get('foobar');
-        $this->assertInstanceOf('TagPlanet\UniversalAnalytics\UniversalAnalyticsInstance', $instance);
+        $this->assertInstanceOf('Lenrsmith\UniversalAnalytics\UniversalAnalyticsInstance', $instance);
         
     }
     

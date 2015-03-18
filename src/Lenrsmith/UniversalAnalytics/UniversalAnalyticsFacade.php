@@ -1,4 +1,4 @@
-<?php namespace TagPlanet\UniversalAnalytics;
+<?php namespace Lenrsmith\UniversalAnalytics;
 
 class UniversalAnalyticsFacade extends \Illuminate\Support\Facades\Facade
 {
