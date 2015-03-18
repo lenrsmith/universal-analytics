@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "lenrsmith\\UniversalAnalytics": "src/"
+            "Lenrsmith\\UniversalAnalytics": "src/"
         }
     },
     "minimum-stability": "dev"
