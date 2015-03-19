@@ -1,9 +1,9 @@
-# Universal Analytics for Laravel 4
-#### Add Universal Analytics to your Laravel 4 application easily.
+# Universal Analytics for Laravel 5
+#### Add Universal Analytics to your Laravel 5 application easily.
 
 [Universal Analytics](https://support.google.com/analytics/answer/2790010?hl=en) is the new code base for 
 [Google Analytics](https://www.google.com/analytics/). This package allows you to easily 
-add it to your Laravel 4 application.
+add it to your Laravel 5 application.
 
 [![Build Status](https://api.travis-ci.org/TagPlanet/universal-analytics.png)](https://travis-ci.org/TagPlanet/universal-analytics)
 [![ProjectStatus](http://stillmaintained.com/TagPlanet/universal-analytics.png)](http://stillmaintained.com/TagPlanet/universal-analytics)
@@ -36,7 +36,7 @@ And run the Composer update command:
 $ composer update
 ```
 
-Then, in your `config/app.php` file add `'TagPlanet\UniversalAnalytics\UniversalAnalyticsServiceProvider'` to the 
+Then, in your `config/app.php` file add `'Lenrsmith\UniversalAnalytics\UniversalAnalyticsServiceProvider'` to the 
   end of the `$providers` array:
 
 ```php
@@ -44,10 +44,10 @@ Then, in your `config/app.php` file add `'TagPlanet\UniversalAnalytics\Universal
     'Illuminate\Foundation\Providers\ArtisanServiceProvider',
     'Illuminate\Auth\AuthServiceProvider',
     ...
-    'TagPlanet\UniversalAnalytics\UniversalAnalyticsServiceProvider',
+    'Lenrsmith\UniversalAnalytics\UniversalAnalyticsServiceProvider',
 ),
 ``` 
-Also in your `config/app.php` file add `'UniversalAnalytics' => 'TagPlanet\UniversalAnalytics\UniversalAnalyticsFacade'` 
+Also in your `config/app.php` file add `'UniversalAnalytics' => 'Lenrsmith\UniversalAnalytics\UniversalAnalyticsFacade'` 
   to the end of the `$aliases` array:
 
 ```php
@@ -55,17 +55,17 @@ Also in your `config/app.php` file add `'UniversalAnalytics' => 'TagPlanet\Unive
     'App'        => 'Illuminate\Support\Facades\App',
     'Artisan'    => 'Illuminate\Support\Facades\Artisan',
     ...
-    'UniversalAnalytics' => 'TagPlanet\UniversalAnalytics\UniversalAnalyticsFacade'
+    'UniversalAnalytics' => 'Lenrsmith\UniversalAnalytics\UniversalAnalyticsFacade'
 ),
 ```
 
 Next, you'll want to publish the config files:
 
 ```
-$ php artisan config:publish tag-planet/universal-analytics
+$ php artisan vendor:publish
 ```
 
-Now you'll be able to edit the configuration options within `app/config/packages/tag-planet/universal-analytics/settings.php`
+Now you'll be able to edit the configuration options within `app/config/universal-analytics.php`
 
 ## Usage
 
@@ -294,7 +294,7 @@ you'll need to use the more advanced format. The following examples uses a frien
 Initial Version
 
 ## License
-Tag Planet's Universal Analytics for Laravel 4 is free software distributed under the terms of the MIT license.
+Tag Planet's Universal Analytics for Laravel 5 is free software distributed under the terms of the MIT license.
 
 ## Finding help
 Should you have any questions, bug reports, or feedback please utilize our [issue tracker](https://github.com/TagPlanet/universal-analytics/issues).

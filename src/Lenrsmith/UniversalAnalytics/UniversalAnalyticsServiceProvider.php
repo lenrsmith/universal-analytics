@@ -19,7 +19,8 @@ class UniversalAnalyticsServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		$this->package('lenrsmith/universal-analytics');
+//		$this->package('lenrsmith/universal-analytics');
+		$this->publishes([__DIR__.'/../../config/config.php' => config_path('universal-analytics.php')]);
 	}
 
 	/**
@@ -29,6 +30,7 @@ class UniversalAnalyticsServiceProvider extends ServiceProvider
 	 */
 	public function register()
 	{
+		$this->mergeConfigFrom(__DIR__.'/../../config/config.php', 'universal-analytics');
 		$this->registerUniversalAnalytics();
 	}
 
@@ -45,4 +47,13 @@ class UniversalAnalyticsServiceProvider extends ServiceProvider
         });
     }
 
+	/**
+	 * Get the services provided by the provider.
+	 *
+	 * @return string
+	 */
+	public function provides()
+	{
+		return ['universal-analytics'];
+	}
 }
