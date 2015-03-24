@@ -209,7 +209,7 @@ In most cases you'll want to render all of the instances at once. To do this, pl
 
 ```php
 // For blade templates:
-{{ UniversalAnalytics::render() }}
+{!! UniversalAnalytics::render() !!}
 
 // For raw PHP templates:
 echo UniversalAnalytics::render();
